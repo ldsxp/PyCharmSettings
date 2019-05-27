@@ -1,0 +1,5 @@
+<templateSet group="Python">
+  <template name="main" value="if __name__ == '__main__':&#10;    from ilds.time import Timer&#10;&#10;    with Timer() as timer:&#10;        $END$" description="if __name__ == '__main__'" toReformat="false" toShortenFQNames="true">
+    <context />
+  </template>
+</templateSet>

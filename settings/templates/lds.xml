@@ -1,16 +1,11 @@
 <templateSet group="lds">
-  <template name="idjango" value="import os&#10;import sys&#10;&#10;# Django 环境设置 ==================================================================&#10;# 网站路径&#10;SITE_PATH = r'D:\my\www 2018 优化测试'&#10;# 网站设置文件&#10;SETTINGS_FILE = &quot;mysite.settings&quot;&#10;sys.path.extend([SITE_PATH, r'D:\mpy\bin', ])&#10;os.environ.setdefault(&quot;DJANGO_SETTINGS_MODULE&quot;, SETTINGS_FILE)&#10;import django&#10;&#10;django.setup()&#10;# ------------------------------------------------------------------ Django 环境设置&#10;# 建议使用：&#10;# from ilds.django.util import django_setup&#10;# django_setup(r'mysite', site_path=None)&#10;$END$" description="导入 django 环境" toReformat="false" toShortenFQNames="true">
+  <template name="idjango" value="# Django 环境设置 ==================================================================&#10;from ilds.django.util import django_setup&#10;django_setup(r'mysite', site_path=None)&#10;# ------------------------------------------------------------------ Django 环境设置&#10;&#10;$END$" description="导入 django 环境" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
   <template name="if" value="if $ITERABLE$:&#10;    $END$&#10;    " description="if ...:" toReformat="false" toShortenFQNames="true">
     <variable name="ITERABLE" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="Python" value="true" />
-    </context>
-  </template>
-  <template name="main" value="if __name__ == '__main__':&#10;    import time&#10;    t1 = time.time()&#10;    &#10;    $END$&#10;    &#10;    print('用时 %.2f 秒' % (time.time() - t1))&#10;" description="if __name__ == '__main__'" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
     </context>
