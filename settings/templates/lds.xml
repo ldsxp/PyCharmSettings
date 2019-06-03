@@ -21,4 +21,9 @@
       <option name="Python" value="true" />
     </context>
   </template>
+  <template name="md_url" value="import re&#10;import os&#10;&#10;# 匹配链接的正则表达式 名称 链接&#10;LINK_NAME_UEL_COMPILE = re.compile(r'\[(.*?)\]\((.*?)\)')  # *([^\n]+?) *#* *(?:\n+|$)   [链接](../url.html)&#10;&#10;file = ''&#10;&#10;with open(file, 'r', encoding='utf-8') as in_f:&#10;    link_result = LINK_NAME_UEL_COMPILE.findall(in_f.read())&#10;    url_set = set()&#10;    if link_result:&#10;        for result in link_result:&#10;            # print(result, result[1].rstrip('/').replace('/', '\\'))&#10;            name = result[0]&#10;            url = result[1].rstrip('/')&#10;            slug = os.path.basename(url)&#10;            if slug in url_set:&#10;                print('已经存在', slug, name, url)&#10;            else:&#10;                url_set.add(slug)&#10;" description="获取md文件中的链接" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
 </templateSet>
