@@ -26,4 +26,9 @@
       <option name="Python" value="true" />
     </context>
   </template>
+  <template name="idj_atomic" value="from django.db import transaction  # @transaction.atomic 或者 with transaction.atomic():&#10;" description="数据库事务" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
 </templateSet>
