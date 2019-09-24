@@ -31,4 +31,9 @@
       <option name="Python" value="true" />
     </context>
   </template>
+  <template name="idir" value="BASE_DIR = os.path.dirname(os.path.abspath(__file__))&#10;#from django.conf import settings&#10;# settings.BASE_DIR" description="文件所在的目录" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
 </templateSet>
