@@ -36,7 +36,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="idj_user" value="from django.contrib.auth import get_user_model&#10;&#10;User = get_user_model()" toReformat="false" toShortenFQNames="true">
+  <template name="idj_user" value="from django.contrib.auth import get_user_model&#10;&#10;User = get_user_model()" description="获取用户模型" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
     </context>
