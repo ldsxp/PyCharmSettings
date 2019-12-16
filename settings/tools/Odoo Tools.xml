@@ -1,0 +1,9 @@
+<toolSet name="Odoo Tools">
+  <tool name="Run Shell" description="运行 Odoo Shell" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="true" showConsoleOnStdErr="true" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="$JDKPath$" />
+      <option name="PARAMETERS" value="D:\odoo-dev\myodoo\src\odoo\odoo-bin shell -c D:\odoo-dev\myodoo\myodoo.cfg --log-level=error" />
+      <option name="WORKING_DIRECTORY" value="$Sourcepath$" />
+    </exec>
+  </tool>
+</toolSet>
