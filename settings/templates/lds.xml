@@ -41,4 +41,10 @@
       <option name="Python" value="true" />
     </context>
   </template>
+  <template name="idj_bat_update" value="update_objs = []&#10;bulk_update_update_fields = []&#10;update_objs.append(obj)&#10;print(len(update_objs), $MODEL$.objects.bulk_update(update_objs, bulk_update_update_fields, batch_size=50))" description="批量更新 Django 数据" toReformat="false" toShortenFQNames="true">
+    <variable name="MODEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
 </templateSet>
