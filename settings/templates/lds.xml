@@ -15,7 +15,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="idj_bat_create" value="loadList = []&#10;&#10;kwargs = {}&#10;loadList.append($NAME$(**kwargs))&#10;&#10;print('成功导入 %s 行' % len($NAME$.objects.bulk_create(loadList)))" description="批量导入 Django 数据库" toReformat="false" toShortenFQNames="true">
+  <template name="idj_bat_create" value="load_list = []&#10;&#10;kwargs = {}&#10;load_list.append($NAME$(**kwargs))&#10;&#10;print('成功导入 %s 行' % len($NAME$.objects.bulk_create(load_list)))" description="批量导入 Django 数据库" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
