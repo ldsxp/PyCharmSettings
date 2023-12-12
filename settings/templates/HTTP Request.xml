@@ -1,0 +1,10 @@
+<templateSet group="HTTP Request">
+  <template name="fptr" value="POST http://$HOST$/$PATH$&#10;Content-Type: multipart/form-data; boundary=WebAppBoundary&#10;&#10;--WebAppBoundary&#10;Content-Disposition: form-data; name=&quot;$FIELD_NAME$&quot; filename=&quot;$FILE_NAME$&quot;&#10;&#10;&lt; $FILE_PATH$&#10;--WebAppBoundary--&#10;&#10;###" description="POST file by multipart/form-data" toReformat="true" toShortenFQNames="false">
+    <variable name="HOST" expression="" defaultValue="&quot;localhost:80&quot;" alwaysStopAt="true" />
+    <variable name="PATH" expression="" defaultValue="&quot;api/item&quot;" alwaysStopAt="true" />
+    <variable name="FIELD_NAME" expression="" defaultValue="&quot;field-name&quot;" alwaysStopAt="true" />
+    <variable name="FILE_NAME" expression="" defaultValue="&quot;file.txt&quot;" alwaysStopAt="true" />
+    <variable name="FILE_PATH" expression="" defaultValue="&quot;./relative/path/to/local_file.txt&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+</templateSet>
