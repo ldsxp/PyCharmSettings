@@ -47,4 +47,9 @@
       <option name="Python" value="true" />
     </context>
   </template>
+  <template name="isave_excel" value="import xlsxwriter&#10;&#10;# 创建一个Excel文件&#10;workbook = xlsxwriter.Workbook('写入表格例子.xlsx')&#10;worksheet = workbook.add_worksheet()&#10;&#10;header_format = workbook.add_format({&#10;    # 'bold': True,&#10;    'text_wrap': True,&#10;    # 'valign': 'top',&#10;    'fg_color': '#c2cde0',&#10;    'border': 1&#10;})&#10;&#10;headers = ['头1', '头2']&#10;&#10;row = 0&#10;&#10;# 写入表头&#10;for col, header in enumerate(headers):&#10;    worksheet.write(row, col, header, header_format)&#10;row += 1&#10;&#10;# 写入数据&#10;for col, val in enumerate(['AA', 1000]):&#10;    worksheet.write(row, col, val)&#10;row += 1&#10;&#10;workbook.close()" description="保存excel的例子" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
 </templateSet>
