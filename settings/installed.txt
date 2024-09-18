@@ -1,8 +1,6 @@
-com.intellij.zh
 com.jetbrains.space
 com.godwin.json.parser
 String Manipulation
 com.intellij.ml.llm
-ai.codegeex.plugin
-zielu.gittoolbox
 cn.yiiguxing.plugin.translate
+zielu.gittoolbox
